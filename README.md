@@ -1,2 +1,2 @@
 # freecodecamp_projects
-Projects completes for freecodecamp.com.
+Projects completed for freecodecamp.com.
