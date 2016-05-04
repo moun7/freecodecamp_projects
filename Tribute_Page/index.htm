@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	
+	<head>
+		<title>Michael Faraday Tribute Page</title>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	</head>
+
+	<script>
+  		$(document).ready(function() {
+  		$("#grey-wells").css("font-family", "Garamond");
+  		$("#title2").html("<em>The father of electromagnetism.</em>");
+  		});
+	</script>
+	
+	<style>
+		#bg-div {
+		  background-color: rgb(181,211,231);
+		}
+		#title-well {
+		  background-color: rgb(220,220,220);
+		  padding: 15px;
+		  padding-bottom: 25px;
+		  margin-bottom: 20px;
+		}
+		
+		#body-box {
+		  background-color: rgb(220,220,220);
+		  padding: 15px;
+		  margin: 0px;
+		}
+		
+		#Fdayimg {
+		  padding-top: 10px;
+		  padding-bottom: 25px;
+		}
+		
+		#F-law {
+		  padding-top: 10px;
+		}
+	</style>
+	
+	<body>
+		<div class="row" id="bg-div">
+  			<div class="col-xs-1 col-md-2"></div>
+  			<div class="container-fluid col-xs-10 col-md-8" id="grey-wells">
+    			<div class="well" id="title-well">
+      				<h1 class="text-center" id="title1">Michael Faraday</h1>
+      				<h4 class="text-center" id="title2">The father of electromagnetism</h4>
+    		</div>
+   			<div class="well" id="body-box">
+      			<div class="row">
+        			<div class="col-xs-3">&nbsp</div>
+        			<div class="col-xs-6">
+          				<img id="Fdayimg" class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Faraday_Cochran_Pickersgill.jpg?1461790582792"></div>
+        			<div class="col-xs-3"></div>
+      			</div>
+      			<p>Michael Faraday was a british scientist who rose to prominace during the 19th century. He is most famous for his contributions to electrochemistry, specifically Faraday's constant and Faraday's law of induction. Some of his other notable contributions were the discovery of benzene, synthesis of certain organochlorides, development of an early form of oxidation numbers, and the invention of the bunsen burner.</p>
+      			<p>For more information regarding Michael Faraday, click <a href="https://en.wikipedia.org/wiki/Michael_Faraday">HERE</a>.</p>
+      			<h3 id="F-law">Faraday's Law of Induction</h3>
+      			<p>Specifically, Faraday's law states:</p>
+      			<p align="center"><em>The emf induced in a circuit is proportional to the time rate of change of the magnetic flux linking that circuit.</em></p>
+      			<p>Or in other words, electricity can be induced in a circuit by changing the surrounding magnetic environment. This has had tremendous consequences on the scientific world and society as a whole, specifically with regards to the generation of electricity and electromagnets, as changing the magnetic environment is as simple as moving or rotating the magnet!</p>
+      			<p>For detailed information regarding Faraday's law, click <a href="http://web.mit.edu/viz/EM/visualizations/coursenotes/modules/guide10.pdf">HERE</a>.</p>
+    		</div>
+    		<div class="col-xs-1 col-md-2">&nbsp</div>
+    	</div>
+	</body>
+	
+</html>

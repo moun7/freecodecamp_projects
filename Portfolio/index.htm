@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+	
+	<head>
+		<title>Ian Mount's Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	</head>
+
+	<script>
+	  	$(document).ready(function() {
+	    $("h3").css("font-family", "Oswald, Monospace").css("color","#369");
+	    $("p").css("font-family", "Droid Sans, Monospace");
+	    $("h1").css("font-family", "Playfair Display SC, Monospace").css("font-size", "11vw");
+	    $(".nav a").on("click", function(){
+	      $(".nav").find(".active").removeClass("active");
+	      $(this).parent().addClass("active");
+	    });
+	    $(".figure-caption").css("font-family", "Droid Sans, Monospace");
+	  	});
+	</script>
+
+	<style>
+	  	.navbar-brand {
+	    	font-family: Playfair Display SC, Monospace;
+	    	font-size: 200%;
+	 	}
+	  
+	  	.navbar .nav > li > a {
+	    	color:  #ddd;
+	    	font-family: Oswald;
+	  	}	
+	  
+	  	.navbar-inverse {
+	    	background-color: #212121;
+	  	}
+	  
+	  	.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+	    	background-color: #369;
+	    	color: #212121;
+	  	}
+	  
+	  	.navbar .nav > .active > a {
+	    	color: #212121;
+	    	background-color: #369;
+	  	}
+	  
+	  	body {
+	    	padding-top: 65px;
+	    	background-color: #ddd;
+	  	}
+	  
+	  	.profpic {
+	    	border-width: 1px;
+	    	border-color: #212121;
+	    	border-style: solid;
+	    	border-radius: 50%;
+	    	margin-top: 10px;
+	  	}
+	  
+	  	.right-content {
+	    	border-left: solid 1px #212121;
+	    	padding-top: 15px;
+	    	padding-bottom: 10px;
+	  	}
+	  
+	  	.spacer-row {
+	    	padding: 15px;
+	  	}
+	  
+	  	@media (min-width: 768px) {
+	    	.proftitle {
+	      		text-align: left;
+	    	}
+	  	}
+	  
+	  	@media (max-width: 768px) {
+	    	.proftitle br {
+	      		display: none;  
+	    	}
+	    	.proftitle {
+	      		font-size: 12.5vw !important;
+	    	}
+	    	.profpic {
+	      		max-height: 260px;
+	    	}
+	    	.smallscreen-fig {
+	      		padding-bottom: 10px;
+	   	 	}
+		} 
+	  
+	  	.profile-head {
+	    	padding-top: 15px;
+	    	padding-bottom: 12px;
+	  	}
+	  
+	  	.figure-img {
+	    	border-width: 1px;
+	    	border-style: solid;
+	    	border-color: #369;
+	  	}
+	</style>
+
+	<body>
+	
+	  <nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container fluid">
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarbutton">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="#top" style="color:#ddd">Ian Mount</a>
+	      </div>
+	      <div class="collapse navbar-collapse" id="navbarbutton">
+	        <ul class="nav navbar-nav">
+	          <li><a href="#about-h" class="hidden-xs">About</a></li>
+	          <li><a href="#about-h" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">About</a></li>
+	          <li><a href="#port-h" class="hidden-xs">Portfolio</a></li>
+	          <li><a href="#port-h" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Portfolio</a></li>
+	          <li><a href="#cont-h" class="hidden-xs">Contact</a></li>
+	          <li><a href="#cont-h" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	
+	  <div class="row">
+	    <div class="col-xs-1">&nbsp</div>
+	    <div class="col-xs-10">
+	      <div class="row profile-head">
+	        <div class="col-sm-2"></div>
+	        <div class="col-sm-4"><img class="img-responsive center-block profpic" src="https://res.cloudinary.com/mounti/image/upload/v1461955157/12644930_10153827046205149_8540224328274016055_n_qo9gnf.jpg"></div>
+	        <div class="col-sm-6 text-left">
+	          <h1 class="text-center proftitle" style="color: #212121">Ian<br> Mount</h1></div>
+	      </div>
+	        <div class="text-center">
+	        <div class="btn-group">
+	          <a target="_blank" href="https://ca.linkedin.com/in/ismount" class="btn"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color:#369"></i></a>
+	          <a target="_blank" href="https://www.facebook.com/ian.mount.10" class="btn"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="color:#369"></i></a>
+	        </div>
+	      </div>
+	      <div class="spacer-row" style="border-bottom: solid 1px #212121" id="about-h"></div>
+	      <div class="spacer-row"></div>
+	      <div class="row">
+	        <div class="col-xs-4 col-sm-3">
+	          <h3 class="text-right"><strong>About</strong></h3>
+	          </div>
+	         <div class="col-xs-8 col-sm-9 right-content">
+	          <p>I am an academically successful recent university graduate looking to explore new opportunities. I'm new to coding but I'm a fast learner and am currently on track to earning my front end development certification.</p>
+          	  <p>Currently, I provide one-on-one tutoring services for university and high school students in math, physics, and chemistry.</p>
+          	  <p>In my spare time, I enjoy computers, badminton, volleyball, and cooking.</p>
+	        </div>
+	      </div>
+	      <div class="spacer-row" id="port-h"></div>
+	      <div class="spacer-row"></div>
+	      <div class="row port-div">
+	        <div class="col-xs-4 col-sm-3 left-content">
+	          <h3 class="text-right"><strong>Portfolio</strong></h3>
+	        </div>
+	        <div class="col-xs-8 col-sm-9 right-content">
+	          <div class="row">
+	            <div class="col-sm-6">
+	              <figure class="figure">
+	                <img class="img-responsive figure-img img-rounded" src="https://res.cloudinary.com/mounti/image/upload/v1462210336/notebook-1194456_640_gw93e6.jpg">
+	                <figcaption class="figure-caption text-center" style="padding-bottom:10px">Placeholder image.</figcaption>
+	              </figure>
+	              <figure class="figure">
+	                <img class="img-responsive figure-img img-rounded" src="https://res.cloudinary.com/mounti/image/upload/v1462210336/notebook-1194456_640_gw93e6.jpg">
+	                <figcaption class="figure-caption text-center smallscreen-fig">Placeholder image.</figcaption>
+	            </div>
+	            <div class="col-sm-6">
+	              <figure class="figure">
+	                <img class="img-responsive figure-img img-rounded" src="https://res.cloudinary.com/mounti/image/upload/v1462210336/notebook-1194456_640_gw93e6.jpg">
+	                <figcaption class="figure-caption text-center" style="padding-bottom:10px">Placeholder image.</figcaption>
+	              </figure>
+	              <figure class="figure">
+	                <img class="img-responsive figure-img img-rounded" src="https://res.cloudinary.com/mounti/image/upload/v1462210336/notebook-1194456_640_gw93e6.jpg">
+	                <figcaption class="figure-caption text-center">Placeholder image.</figcaption>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="row spacer-row" id="cont-h"></div>
+	      <div class="row spacer-row"></div>
+	      <div class="row cont-div">
+	        <div class="col-xs-4 col-sm-3">
+	          <h3 class="text-right"><strong>Contact</strong></h3></div>
+	        <div class="col-xs-8 col-sm-9 right-content">
+	          <p>If you have any questions or you wish to contact me for any reason, feel free to use information below. Links to my linkedin and facebook profiles can be found at the top of the page.</p>
+	        </div>
+	      </div>
+	      <div class="row phone-num">
+	        <div class="col-xs-4 col-sm-3">
+	          <p class="text-right">Phone</p>
+	          <p class="text-right">E-mail</p>
+	        </div>
+	        <div class="col-xs-8 col-sm-9" style="border-left: solid 1px #212121">
+	          <p>555-123-4567</p>
+	          <p>my_email@gmail.com</p>
+	        </div>        
+	      </div>
+	      <div class="row spacer-row" style="border-bottom: solid 1px #212121"></div>
+	      <div class="row spacer-row"></div>
+	    </div>
+	    <div class="col-sm-1">&nbsp</div>
+	  </div>
+	
+	</body>
+	
+</html>
